@@ -1,0 +1,15 @@
+/.idea/*
+/administrator/cache/*
+!/administrator/cache/index.html
+/cache/*
+*.log
+!/cache/index.html
+logs/*
+!/logs/index.html
+/tmp/*
+!/tmp/index.html
+configuration.php
+/administrator/C:/
+/images/*
+!/images/index.html
+

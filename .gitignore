@@ -12,4 +12,5 @@ configuration.php
 media/com_jbusinessdirectory/pictures/*
 /images/*
 !/images/index.html
+/.gitignore
 

@@ -64,7 +64,7 @@ if(count($list)>0){?>
 					<a  target="<?php echo $openTarget; ?>"
 						class="bt-image-link pull-left<?php echo $modal? ' modal':''?>"
 						title="<?php echo $row->title;?>" href="<?php echo $modal?$row->mainImage:$row->link;?>">
-						<img  <?php echo $imgClass ?> src="<?php echo $row->thumbnail; ?>" alt="<?php echo $row->title?>"  style="width:<?php echo $thumbWidth ;?>px;" title="<?php echo $row->title?>" />
+						<img <?php echo $imgClass ?> src="<?php echo $row->thumbnail; ?>" alt="<?php echo $row->title?>"  style="width:<?php echo $thumbWidth ;?>px;" title="<?php echo $row->title?>" />
 					</a>
 					</div>
 

@@ -10,6 +10,5 @@ logs/*
 !/tmp/index.html
 configuration.php
 /administrator/C:/
-/images/*
 !/images/index.html
 

@@ -15,6 +15,10 @@ include($this['path']->path('layouts:theme.config.php'));
 
 <head>
 <?php echo $this['template']->render('head'); ?>
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
 
 <body class="<?php echo $this['config']->get('body_classes'); ?>">
@@ -95,6 +99,13 @@ include($this['path']->path('layouts:theme.config.php'));
 
 	<div class="tm-page">
 
+
+		<?php if ($this['widgets']->count('categories')) : ?>
+			<div class="categories_wrap">
+			<?php echo $this['widgets']->render('categories'); ?>
+	        </div>
+		<?php endif; ?>
+
 		<?php if ($this['widgets']->count('top-a')) : ?>
 		<div class="tm-block<?php echo $block_classes['top-a']; echo $display_classes['top-a']; ?>">
 			<div class="uk-container uk-container-center">
@@ -115,6 +126,18 @@ include($this['path']->path('layouts:theme.config.php'));
 				<section class="<?php echo $grid_classes['top-b']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('top-b', array('layout'=>$this['config']->get('grid.top-b.layout'))); ?></section>
 			</div>
 		</div>
+		<?php endif; ?>
+
+		<?php if ($this['widgets']->count('gallery_text')) : ?>
+			<div class="gallery_text_wrap">
+				<?php echo $this['widgets']->render('gallery_text'); ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if ($this['widgets']->count('gallery')) : ?>
+			<div class="gallery_wrap">
+				<?php echo $this['widgets']->render('gallery'); ?>
+			</div>
 		<?php endif; ?>
 
 		<?php if ($this['widgets']->count('top-c')) : ?>

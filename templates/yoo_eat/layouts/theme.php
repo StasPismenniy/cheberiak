@@ -1,8 +1,8 @@
 <?php
 /**
-* @package   yoo_eat
-* @author    YOOtheme http://www.yootheme.com
-* @copyright Copyright (C) YOOtheme GmbH
+
+* @author    Stas
+* @copyright Copyright (C) Cheberiak
 * @license   http://www.gnu.org/licenses/gpl.html GNU/GPL
 */
 
@@ -221,8 +221,15 @@ include($this['path']->path('layouts:theme.config.php'));
 			<div class="uk-container uk-container-center">
 				<section class="<?php echo $grid_classes['bottom-c']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('bottom-c', array('layout'=>$this['config']->get('grid.bottom-c.layout'))); ?></section>
 			</div>
+
+			<div class="follow_us_wrap">
+				<?php echo $this['widgets']->render('follow_us'); ?>
+			</div>
+
 		</div>
+
 		<?php endif; ?>
+
 
 	</div>
 

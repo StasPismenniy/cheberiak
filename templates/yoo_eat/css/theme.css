@@ -1,6 +1,7 @@
 /* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
 
-@import 'https://fonts.googleapis.com/css?family=Lato:900,700,400,300';
+/*@import 'https://fonts.googleapis.com/css?family=Lato:900,700,400,300';*/
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -9,9 +10,19 @@
  * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
  * 3. Style
  */
+
+/*@font-face {*/
+  /*font-family: 'Conv_lettersoup - RopaSansPro-Regular';*/
+  /*src: url('fonts/lettersoup - RopaSansPro-Regular.eot');*/
+  /*src: local('?'), url('fonts/lettersoup - RopaSansPro-Regular.woff') format('woff'), url('fonts/lettersoup - RopaSansPro-Regular.ttf') format('truetype'), url('fonts/lettersoup - RopaSansPro-Regular.svg') format('svg');*/
+  /*font-weight: normal;*/
+  /*font-style: normal;*/
+/*}*/
+/**/
 html {
+  /*font-family: 'PT Sans', sans-serif;*/
   /* 1 */
-  font: 400 16px / 24px 'Lato';
+  font: 400 16px / 24px 'PT Sans';
   /* 2 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -1881,7 +1892,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   color: #aaaaaa;
   font-size: 14px;
-  font-family: 'Lato';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   background-image: linear-gradient(#ffffff, #ffffff 50%, #ffffff 50%, #ffffff);
   background-position: 0 100%;
@@ -3390,16 +3401,16 @@ select.uk-form-width-mini {
  * Modifier: `uk-button-primary`
  */
 .uk-button-primary {
-  background-color: #b1bd61;
+  background-color: #f15151;
   color: #ffffff;
-  background-image: -webkit-linear-gradient(top, #bbc46a, #abb95b);
-  background-image: linear-gradient(to bottom, #bbc46a, #abb95b);
+  background-image: -webkit-linear-gradient(top, #f15151, #f15151);
+  background-image: linear-gradient(to bottom, #f15151, #f15151);
   border-color: transparent;
 }
 /* Hover */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #b1bd61;
+  background-color: #f15151;;
   color: #ffffff;
   border-color: rgba(0, 0, 0, 0.1);
   background-image: none;
@@ -3409,7 +3420,7 @@ select.uk-form-width-mini {
 /* Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #acb956;
+  background-color: #f15151;;
   color: #ffffff;
   background-image: none;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -8391,7 +8402,7 @@ button.uk-button {
 .tm-page {
   max-width: 100%;
   margin: 0 auto;
-  box-shadow: 0 0 0 1px rgba(47, 49, 53, 0.03), 0 1px 2px rgba(47, 49, 53, 0.04);
+  /*box-shadow: 0 0 0 1px rgba(47, 49, 53, 0.03), 0 1px 2px rgba(47, 49, 53, 0.04);*/
 }
 /*
  * Dropdown
@@ -8407,7 +8418,8 @@ button.uk-button {
   padding: 30px 0;
 }
 .tm-headerbar .tm-logo {
-  float: left;
+  /*float: left;*/
+  text-align: center;
 }
 .tm-headerbar .uk-panel {
   max-width: 300px;
@@ -8439,8 +8451,8 @@ button.uk-button {
  * Bottom
  */
 .tm-bottom {
-  border-top: 1px solid #eaeef0;
-  background: #fcfcfc;
+  /*border-top: 1px solid #eaeef0;*/
+  /*background: #fcfcfc;*/
 }
 /*
  * To-top scroller
@@ -8492,7 +8504,7 @@ button.uk-button {
     margin: 35px auto;
   }
   .tm-page .tm-block:first-child {
-    padding-top: 70px;
+    /*padding-top: 70px;*/
   }
   .tm-block {
     padding-bottom: 70px;
@@ -8932,7 +8944,7 @@ span.tm-heading-italic {
 /* Background Styles
  ========================================================================== */
 body {
-  background: #F7F7F7;
+  /*background: #F7F7F7;*/
 }
 /*
  * Default Style
@@ -9146,21 +9158,17 @@ body {
 
 /*bt-cs*/
 .bt-cs .bt-inner img {
-  /*width: auto !important;*/
-  /*height: 240px;*/
   border-radius: 50%;
-  /*border: none !important;*/
   outline: none;
 }
 
-/*.bt-cs .bt-inner img:hover {*/
-  /*border: 5px solid #525252 !important;*/
-/*}*/
 
 .bt-cs .bt-inner .bt-title {
   text-align: center ;
   display: block !important;
   color: inherit;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px
 }
 
 
@@ -9169,19 +9177,17 @@ body {
   float: none;
 }
 
-.media
-{
+.media {
   /*box-shadow:0px 0px 4px -2px #000;*/
   margin: 20px 0;
   padding:30px;
+  padding-right: 0;
 }
-.dp
-{
+.dp {
   /*border:5px solid #eee !important;*/
   transition: all 0.2s ease-in-out;
 }
-.dp:hover
-{
+.dp:hover {
   border:2px solid #eee;
   transform:rotate(360deg);
   -ms-transform:rotate(360deg);
@@ -9190,14 +9196,18 @@ body {
 }
 
 /* our gallery styles */
-#osgallery138 .rowImages img{
+#osgallery138 .rowImages img {
   width: 100%;
+}
+
+.rowImages {
+  display: block !important;
 }
 
 .imageGallery .fancybox {
   box-shadow: none !important;
   margin: 0;
-  width: 33.33% !important;
+  width: 33% !important;
 }
 
 .imageGallery {
@@ -9212,6 +9222,8 @@ body {
 .rowImages .fancybox {
   display: block;
   float: left;
+  margin-right: 3px;
+  margin-bottom: 3px;
 }
 
 
@@ -9231,11 +9243,143 @@ body {
 }
 
 /* Rs form styles */
+#userForm{
+  width: 525px;
+  margin: 0 auto;
+}
+
+
 .formControlLabel {
   display: none;
 }
 
 #rsform_3_page_0 .name_email {
   float: left;
-  margin-right: 40px;
+  width: 250px;
+  margin-right: 37px;
+}
+
+.formResponsive .formHorizontal .formControls {
+  margin-left: 0 !important;
+}
+
+.formResponsive .formHorizontal .rsform-block.rsform-block-name {
+  margin-bottom: 0 !important;
+}
+
+.name_email .rsform-block input[type="text"] {
+  margin-bottom: 12px !important;
+}
+
+.name_email input[type="text"] {
+  width: 235px !important;
+  height: 25px !important;
+  min-height: 21px !important;
+  line-height: 21px !important;
+  border-radius: 0 !important;
+  font-family: 'Conv_Lato-Light',Arial,sans-serif !important;
+  font-size: 16px !important;
+  border: 1px solid #E5E5E5 !important;
+  box-shadow: none !important;
+}
+
+.block_message {
+  float: left;
+  width: 238px;
+}
+
+.block_message .rsform-block.rsform-block-message {
+  margin-bottom: 0 !important;
+}
+
+.block_message textarea {
+  width: 237px;
+  border-radius: 0;
+  height: 90px;
+  font-family: 'Conv_Lato-Light',Arial,sans-serif !important;
+  font-size: 16px;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 1px solid #E5E5E5 !important;
+}
+
+.rsform-block.rsform-block-submit {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.rsform-block.rsform-block-submit input[type="submit"] {
+  background: #f15151; !important;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  width: 180px;
+  height: 35px;
+  color: #ffffff;
+}
+
+h2.uk-panel-title {
+  width: 525px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px !important;
+}
+
+/*follow us */
+.follow_us_wrap {
+  text-align: center;
+  margin-top: 20px;
+}
+.follow_us_wrap .follow_us h2.uk-panel-title{
+  padding-bottom: 0 !important;
+  padding-top: 20px;
+}
+
+/* K2 item inner */
+div.itemView {
+  border-bottom: none;
+}
+
+
+/* Media styles */
+
+@media (max-width: 650px) {
+  #userForm {
+    width: auto;
+  }
+  #rsform_3_page_0 .name_email {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+  }
+  .block_message {
+    float: none !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .name_email input[type="text"] {
+    width: 100% !important;
+    box-sizing: border-box;
+    height: 45px !important;
+  }
+  .formResponsive .formHorizontal .rsform-block {
+    margin-bottom: 0;
+  }
+  .rsform-block.rsform-block-submit input[type="submit"] {
+    width: 100%;
+  }
+}
+
+
+
+/*clearfix */
+
+.clearfix1:after {
+  display: block;
+  content: '';
+  clear: both;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }

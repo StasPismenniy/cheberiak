@@ -7562,7 +7562,7 @@ body .uk-dropdown .uk-nav,
     display: none !important;
   }
   .uk-hidden-small {
-    display: none !important;
+    /*display: none !important;*/
   }
 }
 /* Remove from the flow and screen readers on any device */
@@ -9182,6 +9182,7 @@ body {
   margin: 20px 0;
   padding:30px;
   padding-right: 0;
+  padding-left: 0;
 }
 .dp {
   /*border:5px solid #eee !important;*/
@@ -9369,6 +9370,34 @@ div.itemView {
   .rsform-block.rsform-block-submit input[type="submit"] {
     width: 100%;
   }
+}
+
+/*Gallery responsive styles */
+
+@media (max-width: 970px) {
+  .imageGallery {
+    text-align: center !important;
+  }
+  .rowImages .fancybox {
+    display: inline-block;
+    float: none;
+    width: 50% !important;
+  }
+  .imageGallery .fancybox {
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .imageGallery.ordasoft {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .rowImages .fancybox {
+    width: 100% !important;
+  }
+
 }
 
 

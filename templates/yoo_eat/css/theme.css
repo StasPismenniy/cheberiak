@@ -7562,7 +7562,7 @@ body .uk-dropdown .uk-nav,
     display: none !important;
   }
   .uk-hidden-small {
-    /*display: none !important;*/
+    display: none !important;
   }
 }
 /* Remove from the flow and screen readers on any device */
@@ -8418,7 +8418,7 @@ button.uk-button {
   padding: 30px 0;
 }
 .tm-headerbar .tm-logo {
-  /*float: left;*/
+  float: left;
   text-align: center;
 }
 .tm-headerbar .uk-panel {
@@ -9182,7 +9182,7 @@ body {
   margin: 20px 0;
   padding:30px;
   padding-right: 0;
-  padding-left: 0;
+  /*padding-left: 0;*/
 }
 .dp {
   /*border:5px solid #eee !important;*/
@@ -9386,6 +9386,7 @@ div.itemView {
   .imageGallery .fancybox {
     margin: auto;
   }
+
 }
 
 
@@ -9400,7 +9401,11 @@ div.itemView {
 
 }
 
+/* categories homepage */
 
+.media {
+  padding-left: 0;
+}
 
 /*clearfix */
 

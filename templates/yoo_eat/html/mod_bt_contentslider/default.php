@@ -40,8 +40,7 @@ if(count($list)>0){?>
 		<div class="slide" style="width:<?php echo $moduleWidth;?>">
 		<?php foreach( $list as $i => $row ): ?>
 			<div class="bt-row row<?php if($i==0) echo 'bt-row-first'; else if($i==count($list)-1) echo 'bt-row-last' ?>"  style="width:<?php echo $itemWidth;?>%" >
-			<div class="col-lg-5">
-				<div class="media">
+
 				 <div class="bt-inner">
 				<?php if( $row->thumbnail && $align_image != "center"): ?>
 					<a target="<?php echo $openTarget; ?>" class="bt-image-link<?php echo $modal? ' modal':''?>" title="<?php echo $row->title;?>" href="<?php echo $modal?$row->mainImage:$row->link;?>">
@@ -105,8 +104,6 @@ if(count($list)>0){?>
 					<?php endif; ?>
 
 				</div>
-				</div><!--media-->
-				</div><!--col end-->
 				<!--end bt-inner -->
 			</div>
 			<!--end bt-row -->

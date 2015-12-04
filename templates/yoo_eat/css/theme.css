@@ -9224,9 +9224,14 @@ body {
   margin-bottom: 0;
 }
 
+#btcontentslider142.bt-cs .bt-inner:first-child {
+  padding-left: 0;
+}
 
 
-/* our gallery styles */
+
+
+  /* our gallery styles */
 #osgallery138 .rowImages img {
   width: 100%;
 }

@@ -9230,10 +9230,13 @@ body {
   padding-left: 0;
 }
 
+#btcontentslider142.bt-cs .bt-inner .bt-title{
+  font-size: 13px;
+}
 
 
 
-  /* our gallery styles */
+/* our gallery styles */
 #osgallery138 .rowImages img {
   width: 100%;
 }
@@ -9379,6 +9382,14 @@ div.itemView {
   border-bottom: none;
 }
 
+
+/* Contact Us Page */
+.contact-us-page {
+
+}
+
+
+/*********************************/
 
 /* Media styles */
 

@@ -9201,6 +9201,8 @@ body {
 /* projects */
 #btcontentslider142 .slides_container .bt-inner .bt-center img{
   border-radius: 0;
+  margin-top: 0;
+  border: 0;
 }
 
 #btcontentslider142 .bt-cs .bt-inner img {
